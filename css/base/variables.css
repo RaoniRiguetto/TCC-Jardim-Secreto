@@ -1,0 +1,47 @@
+:root {
+/* === Cores da paleta === */
+--color-forest-night: #344E41;    /* Verde escuro, denso como uma floresta à noite */
+--color-deep-moss: #3A5A40;       /* Verde musgo profundo */
+--color-olive-leaf: #588157;      /* Folha de oliveira */
+--color-sage-green: #A3B18A;      /* Verde sálvia suave */
+--color-mist-white: #DAD7CD;      /* Branco com toque de verde acinzentado, como névoa */
+
+/* === Cinzas === */
+--gray-100: #f8f9fa;
+--gray-200: #e9ecef;
+--gray-300: #dee2e6;
+--gray-400: #ced4da;
+--gray-500: #adb5bd;
+--gray-600: #6c757d;
+--gray-700: #495057;
+--gray-800: #343a40;
+--gray-900: #212529;
+
+/* === Preto e branco === */
+--color-white: #ffffff;
+--color-black: #000000;
+
+/* === Cores de feedback === */
+--feedback-success: #198754;
+--feedback-error: #dc3545;
+--feedback-warning: #ffc107;
+--feedback-info: #0dcaf0;
+
+/* === Tamanhos === */
+--size-0: 0rem;
+--size-1: 0.5rem;
+--size-2: 1rem;
+--size-3: 1.5rem;
+--size-4: 2rem;
+--size-5: 2.5rem;
+--size-6: 3rem;
+--size-7: 3.5rem;
+--size-8: 4rem;
+--size-9: 4.5rem;
+--size-10: 5rem;
+
+/* === Breakpoints === */
+--breakpoint-sm: 480px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 1200px;
+}

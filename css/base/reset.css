@@ -1,0 +1,29 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Melhora na tipografia para evitar heranças estranhas */
+body {
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+}
+
+/* Remove espaços extras de listas */
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Remove decoração padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Garante altura mínima 100% */
+html, body {
+  height: 100%;
+}
