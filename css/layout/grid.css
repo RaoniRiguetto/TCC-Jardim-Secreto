@@ -3,10 +3,10 @@
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 16px;
+  gap: var(--size-2);
 }
-  
-/* 🌐 Mobile-first base (0–479px) */
+
+
 .col-1  { grid-column: span 1; }
 .col-2  { grid-column: span 2; }
 .col-3  { grid-column: span 3; }

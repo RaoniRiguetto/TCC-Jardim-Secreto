@@ -3,13 +3,5 @@
 @import './base/variables.css';
 
 @import './layout/grid.css';
-@import './layout/breakpoints.css';
 
 @import './utilities/spacing.css';
-@import './utilities/colors.css';
-@import './utilities/display.css';
-@import './utilities/helpers.css';
-@import './utilities/typography.css';
-
-@import './components/buttons.css';
-@import './components/forms.css';
