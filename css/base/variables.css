@@ -1,49 +1,59 @@
 :root {
 /* === Cores da paleta === */
---color-forest-night: #344E41;    /* Verde escuro, denso como uma floresta à noite */
---color-deep-moss: #3A5A40;       /* Verde musgo profundo */
---color-olive-leaf: #588157;      /* Folha de oliveira */
---color-sage-green: #A3B18A;      /* Verde sálvia suave */
---color-mist-white: #DAD7CD;      /* Branco com toque de verde acinzentado, como névoa */
---color-fog-green: #DAE2D9;       /* Verde névoa, muito claro, quase cinza */
-
-
-/* === Cinzas === */
---gray-100: #f8f9fa;
---gray-200: #e9ecef;
---gray-300: #dee2e6;
---gray-400: #ced4da;
---gray-500: #adb5bd;
---gray-600: #6c757d;
---gray-700: #495057;
---gray-800: #343a40;
---gray-900: #212529;
-
-/* === Preto e branco === */
---color-white: #ffffff;
---color-black: #000000;
-
-/* === Cores de feedback === */
---feedback-success: #198754;
---feedback-error: #dc3545;
---feedback-warning: #ffc107;
---feedback-info: #0dcaf0;
-
-/* === Tamanhos === */
---size-0: 0rem;
---size-1: 0.5rem;
---size-2: 1rem;
---size-3: 1.5rem;
---size-4: 2rem;
---size-5: 2.5rem;
---size-6: 3rem;
---size-7: 3.5rem;
---size-8: 4rem;
---size-9: 4.5rem;
---size-10: 5rem;
-
-/* === Breakpoints === */
---breakpoint-sm: 480px;
---breakpoint-md: 768px;
---breakpoint-lg: 1200px;
+  --color-forest-night: #344E41;    /* Verde escuro, denso como uma floresta à noite */
+  --color-deep-moss: #3A5A40;       /* Verde musgo profundo */
+  --color-olive-leaf: #588157;      /* Folha de oliveira */
+  --color-sage-green: #A3B18A;      /* Verde sálvia suave */
+  --color-mist-white: #DAD7CD;      /* Branco com toque de verde acinzentado, como névoa */
+  --color-fog-green: #DAE2D9;       /* Verde névoa, muito claro, quase cinza */
+      
+  /* === Cinzas === */
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #212529;
+    
+  /* === Preto e branco === */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* === Cores de feedback === */
+  --feedback-success: #198754;
+  --feedback-error: #dc3545;
+  --feedback-warning: #ffc107;
+  --feedback-info: #0dcaf0;
+  
+  /* === Escala de espaçamentos === */
+  --size-0: 0rem;    /* 0px  */
+  --size-1: 0.5rem;  /* 8px  */
+  --size-2: 1rem;    /* 16px */
+  --size-3: 1.5rem;  /* 24px */
+  --size-4: 2rem;    /* 32px */
+  --size-5: 2.5rem;  /* 40px */
+  --size-6: 3rem;    /* 48px */
+  --size-7: 3.5rem;  /* 56px */
+  --size-8: 4rem;    /* 64px */
+  --size-9: 4.5rem;  /* 72px */
+  --size-10: 5rem;   /* 80px */
+  
+  /* === Escala de tamanhos de fonte === */
+  --font-xs: 0.75rem;   /* 12px */
+  --font-sm: 0.875rem;  /* 14px */
+  --font-base: 1rem;    /* 16px */
+  --font-lg: 1.125rem;  /* 18px */
+  --font-xl: 1.25rem;   /* 20px */
+  --font-2xl: 1.5rem;   /* 24px */
+  --font-3xl: 1.875rem; /* 30px */
+  --font-4xl: 2.25rem;  /* 36px */
+  --font-5xl: 3rem;     /* 48px */
+  
+  /* === Breakpoints === */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
 }

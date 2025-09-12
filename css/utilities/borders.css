@@ -27,7 +27,7 @@
 
 
 
-/* Larguras da borda */
+/* === Larguras da borda === */
 .border-1  { border-width: 1px; }
 .border-2  { border-width: 2px; }
 .border-3  { border-width: 3px; }
@@ -51,6 +51,18 @@
 .border-top-9  { border-top-width: 9px; }
 .border-top-10 { border-top-width: 10px; }
 
+/* Bordas inferiores */
+.border-bottom-1  { border-bottom-width: 1px; }
+.border-bottom-2  { border-bottom-width: 2px; }
+.border-bottom-3  { border-bottom-width: 3px; }
+.border-bottom-4  { border-bottom-width: 4px; }
+.border-bottom-5  { border-bottom-width: 5px; }
+.border-bottom-6  { border-bottom-width: 6px; }
+.border-bottom-7  { border-bottom-width: 7px; }
+.border-bottom-8  { border-bottom-width: 8px; }
+.border-bottom-9  { border-bottom-width: 9px; }
+.border-bottom-10 { border-bottom-width: 10px; }
+
 /* Bordas direitas */
 .border-right-1  { border-right-width: 1px; }
 .border-right-2  { border-right-width: 2px; }
@@ -63,19 +75,8 @@
 .border-right-9  { border-right-width: 9px; }
 .border-right-10 { border-right-width: 10px; }
 
-/* === Bordas inferiores === */
-.border-bottom-1  { border-bottom-width: 1px; }
-.border-bottom-2  { border-bottom-width: 2px; }
-.border-bottom-3  { border-bottom-width: 3px; }
-.border-bottom-4  { border-bottom-width: 4px; }
-.border-bottom-5  { border-bottom-width: 5px; }
-.border-bottom-6  { border-bottom-width: 6px; }
-.border-bottom-7  { border-bottom-width: 7px; }
-.border-bottom-8  { border-bottom-width: 8px; }
-.border-bottom-9  { border-bottom-width: 9px; }
-.border-bottom-10 { border-bottom-width: 10px; }
 
-/* === Bordas esquerdas === */
+/* Bordas esquerdas */
 .border-left-1  { border-left-width: 1px; }
 .border-left-2  { border-left-width: 2px; }
 .border-left-3  { border-left-width: 3px; }
@@ -101,6 +102,110 @@
 .rounded-8  { border-radius: var(--size-8); }
 .rounded-9  { border-radius: var(--size-9); }
 .rounded-10 { border-radius: var(--size-10); }
+
+/* Arredondamento superior */
+.rounded-top-0  { border-top-left-radius: var(--size-0);  border-top-right-radius: var(--size-0); }
+.rounded-top-1  { border-top-left-radius: var(--size-1);  border-top-right-radius: var(--size-1); }
+.rounded-top-2  { border-top-left-radius: var(--size-2);  border-top-right-radius: var(--size-2); }
+.rounded-top-3  { border-top-left-radius: var(--size-3);  border-top-right-radius: var(--size-3); }
+.rounded-top-4  { border-top-left-radius: var(--size-4);  border-top-right-radius: var(--size-4); }
+.rounded-top-5  { border-top-left-radius: var(--size-5);  border-top-right-radius: var(--size-5); }
+.rounded-top-6  { border-top-left-radius: var(--size-6);  border-top-right-radius: var(--size-6); }
+.rounded-top-7  { border-top-left-radius: var(--size-7);  border-top-right-radius: var(--size-7); }
+.rounded-top-8  { border-top-left-radius: var(--size-8);  border-top-right-radius: var(--size-8); }
+.rounded-top-9  { border-top-left-radius: var(--size-9);  border-top-right-radius: var(--size-9); }
+.rounded-top-10 { border-top-left-radius: var(--size-10); border-top-right-radius: var(--size-10); }
+
+/* Arredondamento inferior */
+.rounded-bottom-0  { border-bottom-left-radius: var(--size-0);  border-bottom-right-radius: var(--size-0); }
+.rounded-bottom-1  { border-bottom-left-radius: var(--size-1);  border-bottom-right-radius: var(--size-1); }
+.rounded-bottom-2  { border-bottom-left-radius: var(--size-2);  border-bottom-right-radius: var(--size-2); }
+.rounded-bottom-3  { border-bottom-left-radius: var(--size-3);  border-bottom-right-radius: var(--size-3); }
+.rounded-bottom-4  { border-bottom-left-radius: var(--size-4);  border-bottom-right-radius: var(--size-4); }
+.rounded-bottom-5  { border-bottom-left-radius: var(--size-5);  border-bottom-right-radius: var(--size-5); }
+.rounded-bottom-6  { border-bottom-left-radius: var(--size-6);  border-bottom-right-radius: var(--size-6); }
+.rounded-bottom-7  { border-bottom-left-radius: var(--size-7);  border-bottom-right-radius: var(--size-7); }
+.rounded-bottom-8  { border-bottom-left-radius: var(--size-8);  border-bottom-right-radius: var(--size-8); }
+.rounded-bottom-9  { border-bottom-left-radius: var(--size-9);  border-bottom-right-radius: var(--size-9); }
+.rounded-bottom-10 { border-bottom-left-radius: var(--size-10); border-bottom-right-radius: var(--size-10); }
+
+/* Arredondamento direito */
+.rounded-right-0  { border-top-right-radius: var(--size-0);  border-bottom-right-radius: var(--size-0); }
+.rounded-right-1  { border-top-right-radius: var(--size-1);  border-bottom-right-radius: var(--size-1); }
+.rounded-right-2  { border-top-right-radius: var(--size-2);  border-bottom-right-radius: var(--size-2); }
+.rounded-right-3  { border-top-right-radius: var(--size-3);  border-bottom-right-radius: var(--size-3); }
+.rounded-right-4  { border-top-right-radius: var(--size-4);  border-bottom-right-radius: var(--size-4); }
+.rounded-right-5  { border-top-right-radius: var(--size-5);  border-bottom-right-radius: var(--size-5); }
+.rounded-right-6  { border-top-right-radius: var(--size-6);  border-bottom-right-radius: var(--size-6); }
+.rounded-right-7  { border-top-right-radius: var(--size-7);  border-bottom-right-radius: var(--size-7); }
+.rounded-right-8  { border-top-right-radius: var(--size-8);  border-bottom-right-radius: var(--size-8); }
+.rounded-right-9  { border-top-right-radius: var(--size-9);  border-bottom-right-radius: var(--size-9); }
+.rounded-right-10 { border-top-right-radius: var(--size-10); border-bottom-right-radius: var(--size-10); }
+
+/* Arredondamento esquerdo */
+.rounded-left-0  { border-top-left-radius: var(--size-0);  border-bottom-left-radius: var(--size-0); }
+.rounded-left-1  { border-top-left-radius: var(--size-1);  border-bottom-left-radius: var(--size-1); }
+.rounded-left-2  { border-top-left-radius: var(--size-2);  border-bottom-left-radius: var(--size-2); }
+.rounded-left-3  { border-top-left-radius: var(--size-3);  border-bottom-left-radius: var(--size-3); }
+.rounded-left-4  { border-top-left-radius: var(--size-4);  border-bottom-left-radius: var(--size-4); }
+.rounded-left-5  { border-top-left-radius: var(--size-5);  border-bottom-left-radius: var(--size-5); }
+.rounded-left-6  { border-top-left-radius: var(--size-6);  border-bottom-left-radius: var(--size-6); }
+.rounded-left-7  { border-top-left-radius: var(--size-7);  border-bottom-left-radius: var(--size-7); }
+.rounded-left-8  { border-top-left-radius: var(--size-8);  border-bottom-left-radius: var(--size-8); }
+.rounded-left-9  { border-top-left-radius: var(--size-9);  border-bottom-left-radius: var(--size-9); }
+.rounded-left-10 { border-top-left-radius: var(--size-10); border-bottom-left-radius: var(--size-10); }
+
+/* Canto superior direito */
+.rounded-top-right-0  { border-top-right-radius: var(--size-0); }
+.rounded-top-right-1  { border-top-right-radius: var(--size-1); }
+.rounded-top-right-2  { border-top-right-radius: var(--size-2); }
+.rounded-top-right-3  { border-top-right-radius: var(--size-3); }
+.rounded-top-right-4  { border-top-right-radius: var(--size-4); }
+.rounded-top-right-5  { border-top-right-radius: var(--size-5); }
+.rounded-top-right-6  { border-top-right-radius: var(--size-6); }
+.rounded-top-right-7  { border-top-right-radius: var(--size-7); }
+.rounded-top-right-8  { border-top-right-radius: var(--size-8); }
+.rounded-top-right-9  { border-top-right-radius: var(--size-9); }
+.rounded-top-right-10 { border-top-right-radius: var(--size-10); }
+
+/* Canto superior esquerdo */
+.rounded-top-left-0  { border-top-left-radius: var(--size-0); }
+.rounded-top-left-1  { border-top-left-radius: var(--size-1); }
+.rounded-top-left-2  { border-top-left-radius: var(--size-2); }
+.rounded-top-left-3  { border-top-left-radius: var(--size-3); }
+.rounded-top-left-4  { border-top-left-radius: var(--size-4); }
+.rounded-top-left-5  { border-top-left-radius: var(--size-5); }
+.rounded-top-left-6  { border-top-left-radius: var(--size-6); }
+.rounded-top-left-7  { border-top-left-radius: var(--size-7); }
+.rounded-top-left-8  { border-top-left-radius: var(--size-8); }
+.rounded-top-left-9  { border-top-left-radius: var(--size-9); }
+.rounded-top-left-10 { border-top-left-radius: var(--size-10); }
+
+/* Canto inferior direito */
+.rounded-bottom-right-0  { border-bottom-right-radius: var(--size-0); }
+.rounded-bottom-right-1  { border-bottom-right-radius: var(--size-1); }
+.rounded-bottom-right-2  { border-bottom-right-radius: var(--size-2); }
+.rounded-bottom-right-3  { border-bottom-right-radius: var(--size-3); }
+.rounded-bottom-right-4  { border-bottom-right-radius: var(--size-4); }
+.rounded-bottom-right-5  { border-bottom-right-radius: var(--size-5); }
+.rounded-bottom-right-6  { border-bottom-right-radius: var(--size-6); }
+.rounded-bottom-right-7  { border-bottom-right-radius: var(--size-7); }
+.rounded-bottom-right-8  { border-bottom-right-radius: var(--size-8); }
+.rounded-bottom-right-9  { border-bottom-right-radius: var(--size-9); }
+.rounded-bottom-right-10 { border-bottom-right-radius: var(--size-10); }
+
+/* Canto inferior esquerdo */
+.rounded-bottom-left-0  { border-bottom-left-radius: var(--size-0); }
+.rounded-bottom-left-1  { border-bottom-left-radius: var(--size-1); }
+.rounded-bottom-left-2  { border-bottom-left-radius: var(--size-2); }
+.rounded-bottom-left-3  { border-bottom-left-radius: var(--size-3); }
+.rounded-bottom-left-4  { border-bottom-left-radius: var(--size-4); }
+.rounded-bottom-left-5  { border-bottom-left-radius: var(--size-5); }
+.rounded-bottom-left-6  { border-bottom-left-radius: var(--size-6); }
+.rounded-bottom-left-7  { border-bottom-left-radius: var(--size-7); }
+.rounded-bottom-left-8  { border-bottom-left-radius: var(--size-8); }
+.rounded-bottom-left-9  { border-bottom-left-radius: var(--size-9); }
+.rounded-bottom-left-10 { border-bottom-left-radius: var(--size-10); }
 
 /* Bordas totalmente arredondadas (círculo) */
 .rounded-circle { border-radius: 50%; }

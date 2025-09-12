@@ -2,6 +2,11 @@
 @import './base/reset.css';
 @import './base/variables.css';
 
+@import './layout/container.css';
 @import './layout/grid.css';
 
+@import './utilities/borders.css';
+@import './utilities/colors.css';
+@import './utilities/flex.css';
 @import './utilities/spacing.css';
+@import './utilities/typography.css';

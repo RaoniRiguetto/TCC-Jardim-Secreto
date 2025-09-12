@@ -1,0 +1,95 @@
+/* === Tamanhos de fonte === */
+.text-xs   { font-size: var(--font-xs); }
+.text-sm   { font-size: var(--font-sm); }
+.text-base { font-size: var(--font-base); }
+.text-lg   { font-size: var(--font-lg); }
+.text-xl   { font-size: var(--font-xl); }
+.text-2xl  { font-size: var(--font-2xl); }
+.text-3xl  { font-size: var(--font-3xl); }
+.text-4xl  { font-size: var(--font-4xl); }
+.text-5xl  { font-size: var(--font-5xl); }
+
+
+
+/* === Cores de texto === */
+.text-forest-night { color: var(--color-forest-night); }
+.text-deep-moss    { color: var(--color-deep-moss); }
+.text-olive-leaf   { color: var(--color-olive-leaf); }
+.text-sage-green   { color: var(--color-sage-green); }
+.text-mist-white   { color: var(--color-mist-white); }
+.text-fog-green    { color: var(--color-fog-green); }
+
+.text-white        { color: var(--color-white); }
+.text-black        { color: var(--color-black); }
+
+.text-success      { color: var(--feedback-success); }
+.text-error        { color: var(--feedback-error); }
+.text-warning      { color: var(--feedback-warning); }
+.text-info         { color: var(--feedback-info); }
+
+/* Tons de cinza */
+.text-gray-100 { color: var(--gray-100); }
+.text-gray-200 { color: var(--gray-200); }
+.text-gray-300 { color: var(--gray-300); }
+.text-gray-400 { color: var(--gray-400); }
+.text-gray-500 { color: var(--gray-500); }
+.text-gray-600 { color: var(--gray-600); }
+.text-gray-700 { color: var(--gray-700); }
+.text-gray-800 { color: var(--gray-800); }
+.text-gray-900 { color: var(--gray-900); }
+
+
+
+/* === Peso da fonte === */
+.fw-light    { font-weight: 300; }
+.fw-normal   { font-weight: 400; }
+.fw-medium   { font-weight: 500; }
+.fw-semibold { font-weight: 600; }
+.fw-bold     { font-weight: 700; }
+.fw-bolder   { font-weight: 800; }
+.fw-black    { font-weight: 900; }
+
+/* === Alinhamento de texto === */
+.text-left    { text-align: left; }
+.text-center  { text-align: center; }
+.text-right   { text-align: right; }
+.text-justify { text-align: justify; }
+
+/* === Transformação de texto === */
+.text-uppercase   { text-transform: uppercase; }
+.text-lowercase   { text-transform: lowercase; }
+.text-capitalize  { text-transform: capitalize; }
+
+/* === Estilo de fonte === */
+.text-italic      { font-style: italic; }
+.text-normal      { font-style: normal; }
+.text-oblique     { font-style: oblique; }
+.text-smallcaps   { font-variant: small-caps; }
+
+/* === Decoração de texto === */
+.text-decoration-none { text-decoration: none; }
+.text-underline       { text-decoration: underline; }
+.text-line-through    { text-decoration: line-through; }
+.text-overline        { text-decoration: overline; }
+
+/* === Quebra e comportamento do texto === */
+.text-wrap   { white-space: normal; }
+.text-nowrap { white-space: nowrap; }
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* === Altura da linha (line-height) === */
+.lh-1   { line-height: 1; }
+.lh-sm  { line-height: 1.25; }
+.lh-base{ line-height: 1.5; }
+.lh-lg  { line-height: 2; }
+
+/* === Espaçamento entre letras (letter-spacing) === */
+.ls-1    { letter-spacing: -0.05em; } /* mais apertado */
+.ls-2    { letter-spacing: -0.025em; }
+.ls-3    { letter-spacing: 0; }      /* normal */
+.ls-4    { letter-spacing: 0.05em; }
+.ls-5    { letter-spacing: 0.1em; }  /* mais espaçado */
