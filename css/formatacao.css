@@ -1,0 +1,22 @@
+.valido {
+    border: 2px solid #28a745 !important;
+    background-color: #f8fff9;
+}
+
+.invalido {
+    border: 2px solid #dc3545 !important;
+    background-color: #fff8f8;
+}
+
+.contador {
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
+.contador.valido {
+    color: #28a745;
+}
+
+.contador.invalido {
+    color: #dc3545;
+}

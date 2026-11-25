@@ -1,0 +1,246 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+    padding: var(--size-5);
+}
+
+.main-content {
+    flex: 1;
+    padding: var(--size-6);
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--size-8);
+    padding-bottom: var(--size-5);
+    border-bottom: 1px solid var(--neutral-light);
+    background: var(--white);
+    border-radius: var(--size-3);
+    padding: var(--size-5);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.header-left h1 {
+    color: var(--primary);
+    font-size: var(--font-3xl);
+    margin-bottom: var(--size-2);
+    font-weight: 700;
+}
+
+.header-left p {
+    color: var(--text-light);
+    font-size: var(--font-base);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: var(--size-4);
+}
+
+.current-date {
+    color: var(--primary);
+    font-size: var(--font-sm);
+    font-weight: 600;
+    background: var(--neutral-extra-light);
+    padding: var(--size-2) var(--size-4);
+    border-radius: var(--size-2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--neutral-light);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--size-6);
+    margin-bottom: var(--size-8);
+}
+
+.card-painel {
+    background: var(--white);
+    border-radius: var(--size-4);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: var(--size-5);
+    transition: transform 0.3s ease;
+    border: 1px solid var(--neutral-light);
+}
+
+.card-painel:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(52, 78, 65, 0.15);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--size-4);
+    padding-bottom: var(--size-3);
+    border-bottom: 1px solid var(--neutral-light);
+}
+
+.card-header h2 {
+    color: var(--primary);
+    font-size: var(--font-lg);
+    font-weight: 600;
+}
+
+.btn-view-all {
+    color: var(--primary);
+    text-decoration: none;
+    font-size: var(--font-sm);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: var(--size-2) var(--size-3);
+    border-radius: var(--size-1);
+    background: var(--neutral-extra-light);
+    border: 1px solid var(--neutral-light);
+}
+
+.btn-view-all:hover {
+    color: var(--white);
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.reservas-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3);
+}
+
+.reserva-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--size-3);
+    background: var(--neutral-extra-light);
+    border-radius: var(--size-2);
+    transition: all 0.3s ease;
+    border-left: 3px solid transparent;
+}
+
+.reserva-item:hover {
+    background: var(--neutral-light);
+    border-left-color: var(--primary);
+    transform: translateX(4px);
+}
+
+.reserva-info h4 {
+    color: var(--text-primary);
+    font-size: var(--font-sm);
+    margin-bottom: var(--size-1);
+    font-weight: 600;
+}
+
+.reserva-info span {
+    color: var(--text-light);
+    font-size: var(--font-xs);
+}
+
+.status {
+    padding: var(--size-1) var(--size-2);
+    border-radius: var(--size-1);
+    font-size: var(--font-xs);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status.confirmado {
+    background: rgba(25, 135, 84, 0.1);
+    color: var(--success);
+    border: 1px solid rgba(25, 135, 84, 0.2);
+}
+
+.status.andamento {
+    background: rgba(255, 193, 7, 0.1);
+    color: var(--warning);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+}
+
+.status.cancelado {
+    background: rgba(253, 126, 20, 0.1);
+    color: #fd7e14;
+    border: 1px solid rgba(253, 126, 20, 0.2);
+}
+
+.status.finalizado {
+    background: rgba(13, 202, 240, 0.1);
+    color: var(--info);
+    border: 1px solid rgba(13, 202, 240, 0.2);
+}
+
+.occupancy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.occupancy-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: var(--size-1);
+}
+
+.occupancy-total {
+    font-size: var(--font-lg);
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.occupancy-rate {
+    background: var(--primary);
+    color: var(--white);
+    padding: var(--size-1) var(--size-3);
+    border-radius: var(--size-2);
+    font-weight: 600;
+    font-size: var(--font-sm);
+}
+
+.occupancy-chart {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4);
+}
+
+.chart-bar {
+    display: flex;
+    align-items: center;
+    gap: var(--size-3);
+}
+
+.bar-label {
+    color: var(--text-primary);
+    font-size: var(--font-sm);
+    font-weight: 500;
+    min-width: 120px;
+}
+
+.bar-container {
+    flex: 1;
+    height: 8px;
+    background: var(--neutral-light);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.bar-value {
+    color: var(--text-secondary);
+    font-size: var(--font-sm);
+    font-weight: 600;
+    min-width: 40px;
+    text-align: right;
+}

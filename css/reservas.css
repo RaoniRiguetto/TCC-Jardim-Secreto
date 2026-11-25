@@ -1,0 +1,214 @@
+.reservation-container {
+    min-height: 100vh;
+    padding: var(--size-8) var(--size-5);
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+}
+
+.reservation-card {
+    background: var(--white);
+    border-radius: var(--size-4);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+    padding: var(--size-8);
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reservation-header {
+    text-align: center;
+    margin-bottom: var(--size-8);
+}
+
+.reservation-header h1 {
+    color: var(--primary);
+    font-size: var(--font-3xl);
+    margin-bottom: var(--size-2);
+    font-weight: 600;
+}
+
+.reservation-header p {
+    color: var(--text-light);
+    font-size: var(--font-base);
+}
+
+.form-section {
+    margin-bottom: var(--size-8);
+}
+
+.form-section h2 {
+    color: var(--primary);
+    font-size: var(--font-xl);
+    margin-bottom: var(--size-5);
+    font-weight: 600;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--size-4);
+    width: 100%;
+    grid-column: 1 / -1;
+}
+
+.form-group {
+    margin-bottom: var(--size-4);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: var(--size-2);
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: var(--font-sm);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--size-3) var(--size-4);
+    border: 1px solid var(--neutral-light);
+    border-radius: var(--size-2);
+    font-size: var(--font-base);
+    background-color: var(--white);
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(52, 78, 65, 0.2);
+}
+
+.btn-submit {
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    padding: var(--size-4) var(--size-6);
+    border: none;
+    border-radius: var(--size-2);
+    font-size: var(--font-lg);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: var(--size-4) 0;
+}
+
+.btn-submit:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 78, 65, 0.3);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
+
+.rooms-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.search-header {
+    text-align: center;
+    margin-bottom: var(--size-2);
+}
+.search-header h1 {
+    color: var(--primary);
+    font-size: var(--font-3xl);
+    margin-bottom: var(--size-2);
+    font-weight: 600;
+}
+
+.rooms-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--size-4);
+    margin: var(--size-6) 0;
+}
+
+.room-option {
+    background: var(--neutral-extra-light);
+    border-radius: var(--size-3);
+    padding: var(--size-4);
+    border-left: 4px solid var(--primary);
+    display: block;
+    border: 2px solid var(--neutral-extra-light);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.room-option:hover {
+    border-color: var(--primary-light);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.room-option input[type="radio"] {
+    display: none;
+}
+
+.room-option-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3);
+}
+
+.room-option-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--size-4);
+}
+
+.room-option-header h3 {
+    font-size: var(--font-lg);
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 0;
+}
+
+.room-option-category {
+    background-color: var(--primary-extra-light);
+    color: var(--primary-dark);
+    padding: var(--size-1) var(--size-3);
+    border-radius: var(--size-2);
+    font-size: var(--font-xs);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.room-option-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-light);
+    font-size: var(--font-sm);
+}
+
+.room-option-details span {
+    display: flex;
+    align-items: center;
+    gap: var(--size-2);
+}
+
+.room-option-price {
+    font-size: var(--font-base);
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.room-option:has(input[type="radio"]:checked) {
+    border-color: var(--primary);
+    background-color: var(--primary-extra-light);
+    box-shadow: 0 6px 20px rgba(52, 78, 65, 0.15);
+}

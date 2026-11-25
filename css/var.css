@@ -1,0 +1,180 @@
+:root {
+    /* === CORES PRINCIPAIS === */
+    --primary: #344E41;             /* Verde principal - headers, botões importantes */
+    --primary-dark: #2d4538;        /* Verde mais escuro - hovers */
+    --primary-light: #3A5A40;       /* Verde médio - secundário */
+
+    --accent: #588157;              /* Destaque - preços, CTAs secundários */
+    --accent-light: #A3B18A;        /* Destaque suave - bordas, fundos leves */
+
+    --neutral-light: #DAD7CD;       /* Fundo de seções */
+    --neutral-extra-light: #d9ecd6; /* Fundo principal */
+    --white: #ffffff;               /* Branco */
+
+    /* === TEXTO === */
+    --text-primary: #2d4538;      /* Texto escuro */
+    --text-secondary: #588157;    /* Texto médio */
+    --text-light: #A3B18A;        /* Texto claro */
+
+    /* === FEEDBACK === */
+    --success: #198754;
+    --error: #dc3545;
+    --warning: #ffc107;
+    --info: #0dcaf0;
+
+    /* === ESCALA DE ESPAÇAMENTOS (BASE 8px) === */
+    --size-0: 0;       /* 0px   - Reset */
+    --size-1: 0.25rem; /* 4px   - Espaços mínimos */
+    --size-2: 0.5rem;  /* 8px   - Padding interno de botões */
+    --size-3: 0.75rem; /* 12px  - Pequenos espaços */
+    --size-4: 1rem;    /* 16px  - Base */
+    --size-5: 1.5rem;  /* 24px  - Margens padrão */
+    --size-6: 2rem;    /* 32px  - Seções */
+    --size-7: 2.5rem;  /* 40px  - Headers */
+    --size-8: 3rem;    /* 48px  - Grandes espaços */
+    --size-9: 4rem;    /* 64px  - Hero sections */
+    --size-10: 5rem;   /* 80px  - Máximo */
+
+    /* === FONTES === */
+    --font-xs: 0.75rem;    /* 12px - Labels, small text */
+    --font-sm: 0.875rem;   /* 14px - Texto secundário */
+    --font-base: 1rem;     /* 16px - Corpo do texto */
+    --font-lg: 1.125rem;   /* 18px - Lead text */
+    --font-xl: 1.25rem;    /* 20px - Subtítulos */
+    --font-2xl: 1.5rem;    /* 24px - Títulos de seção */
+    --font-3xl: 1.875rem;  /* 30px - Headers */
+    --font-4xl: 2.25rem;   /* 36px - Hero text */
+    --font-5xl: 3rem;      /* 48px - Título principal */
+}
+
+@font-face {
+    font-family: 'Rouge Script';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/RougeScript-Regular.ttf') format('truetype');
+}
+
+/* === CARDS DE FEEDBACK === */
+
+.card {
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 5px solid;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease,
+        max-height 0.8s ease,
+        padding 0.8s ease,
+        margin 0.8s ease;
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.card-sucesso {
+    background-color: rgba(25, 135, 84, 0.1);
+    border-left-color: var(--accent);
+    color: var(--success);
+}
+
+.card-erro {
+    background-color: rgba(220, 53, 69, 0.1);
+    border-left-color: var(--error);
+    color: var(--error);
+}
+
+.card-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    border-left-color: var(--warning);
+    color: #856404;
+}
+
+.card-info {
+    background-color: rgba(13, 202, 240, 0.1);
+    border-left-color: var(--info);
+    color: #055160;
+}
+
+.card.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    pointer-events: none;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+.card-erro-flutuante {
+    background-color: #fde8e9;
+    border-left-color: var(--error);
+    color: var(--error);
+    position: absolute;
+    padding: var(--size-3);
+    border-radius: var(--size-2);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    margin: 0;
+    animation: slideDown 0.5s ease-out;
+    width: 90%;
+    max-width: 360px;
+    top: 110px;
+}
+
+.card-erro-flutuante.hidden {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    pointer-events: none;
+}
+
+.card-sucesso-flutuante {
+    background-color: #e8fdea;
+    border-left-color: var(--success);
+    color: var(--success);
+    position: absolute;
+    padding: var(--size-3);
+    border-radius: var(--size-2);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    margin: 0;
+    animation: slideDown 0.5s ease-out;
+    width: 90%;
+    max-width: 360px;
+    top: 110px;
+}
+
+.card-sucesso-flutuante.hidden {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: none;
+    pointer-events: none;
+}
